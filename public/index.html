@@ -34,76 +34,69 @@
       canvas="my-canvas"
     ></script>
   </head>
+<body>
+	<div class="d-flex justify-content-center">
+  <div class="row">
+		<div class="col-2"></div>
+		<div class="col-8">
+			<div class="d-flex justify-content-center"><img src="/logo.png"></div>
+			<!-- https://mdbootstrap.com/docs/standard/extended/login/ -->
+			<form>
+				<!-- Email input -->
+				<div class="form-outline mb-4">
+					<input type="email" id="form2Example1" class="form-control" placeholder="someone.email.here@email.edu"/>
+					<label class="form-label" for="form2Example1">Email address</label>
+				</div>
 
-  <body>
-    <!-- Our row of buttons -->
-    <button type="button" class="btn" id="default">
-      <span class="material-symbols-outlined"> edit</span>
-    </button>
-    <button type="button" class="btn" id="small">
-      <span class="material-symbols-outlined"> check_indeterminate_small </span>
-    </button>
-    <button type="button" class="btn" id="large">
-      <span class="material-symbols-outlined"> add </span>
-    </button>
-    <button type="button" style="background-color: red" id="red-color">
-      <span class="material-symbols-outlined">format_paint</span>
-    </button>
-    <button type="button" style="background-color: yellow" id="yellow-color">
-      <span class="material-symbols-outlined">format_paint</span>
-    </button>
-    <button type="button" style="background-color: blue" id="blue-color">
-      <span class="material-symbols-outlined">format_paint</span>
-    </button>
-    <button
-      type="button"
-      style="background-color: greenyellow"
-      id="green-color"
-    >
-      <span class="material-symbols-outlined">format_paint</span>
-    </button>
-    <button type="button" style="background-color: purple" id="purple-color">
-      <span class="material-symbols-outlined">format_paint</span>
-    </button>
-    <button
-      type="button"
-      style="background-color: black; color: antiquewhite"
-      id="black-color"
-    >
-      <span class="material-symbols-outlined">format_paint</span>
-    </button>
-    <button
-      type="button"
-      style="background-color: antiquewhite"
-      id="white-color"
-    >
-      <span class="material-symbols-outlined">format_paint</span>
-    </button>
-    <button type="button" style="background-color: bisque" id="bisque-color">
-      <span class="material-symbols-outlined">format_paint</span>
-    </button>
-    <button type="button" class="btn" id="color-fill">
-      <span class="material-symbols-outlined"> format_color_fill </span>
-    </button>
-    <br />
-    <br />
-    <button type="button" class="btn" id="eraser">
-      <span class="material-symbols-outlined">circle</span>
-    </button>
-    <button type="button" class="btn" style="font-size: large" id="new-brush">
-      watercolor
-    </button>
-    <button type="button" class="btn" style="font-size: large" id="drypaint">
-      dry paint
-    </button>
-    <button type="button" class="btn" style="font-size: large" id="pencil">
-      pencil
-    </button>
+				<!-- Password input -->
+				<div class="form-outline mb-4">
+					<input type="password" id="form2Example2" class="form-control" placeholder="**********pretendthisisapassword"/>
+					<label class="form-label" for="form2Example2">Password</label>
+				</div>
 
-    <br />
-    <!-- I used a simple line break here, but you might want to consider using a more sophisticated layout/formatting solution (e.g. Bootstrap rows and columns), especially if there's a lot of elements you want to cleanly organize, position, and format in your app. -->
+				<!-- 2 column grid layout for inline styling -->
+				<div class="row mb-4">
+					<div class="col d-flex justify-content-center">
+						<!-- Checkbox -->
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+							<label class="form-check-label" for="form2Example31"> Remember me </label>
+						</div>
+					</div>
 
-    <canvas id="my-canvas" width="800" height="600"></canvas>
-    <!-- our Canvas object -->
+					<div class="col">
+						<!-- Simple link -->
+						<a href="#!">Forgot password?</a>
+					</div>
+				</div>
+
+				<!-- Submit button -->
+				<a href="/files" type="button" class="btn btn-primary btn-block mb-4">Sign in</a>
+
+				<!-- Register buttons -->
+				<div class="text-center">
+					<p>Not a member? <a href="#!">Register</a></p>
+					<p>or sign up with:</p>
+					<button type="button" class="btn btn-link btn-floating mx-1">
+						<i class="fab fa-facebook-f"></i>
+					</button>
+
+					<button type="button" class="btn btn-link btn-floating mx-1">
+						<i class="fab fa-google"></i>
+					</button>
+
+					<button type="button" class="btn btn-link btn-floating mx-1">
+						<i class="fab fa-twitter"></i>
+					</button>
+
+					<button type="button" class="btn btn-link btn-floating mx-1">
+						<i class="fab fa-github"></i>
+					</button>
+				</div>
+			</form>
+		</div>
+		<div class=col-2></div>
+		</div>
+		</div>
   </body>
 </html>

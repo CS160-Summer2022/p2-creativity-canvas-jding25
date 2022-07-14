@@ -21,7 +21,7 @@ const app = express();
 const host = 'localhost';
 const port = 8000;
 
-var publicPath = path.join(__dirname, 'public'); //get the path to use our "public" folder where we stored our html, css, images, etc
+var publicPath = path.join(__dirname, "public"); //get the path to use our "public" folder where we stored our html, css, images, etc
 app.use(express.static(publicPath));  //tell express to use that folder
 
 
@@ -29,9 +29,15 @@ app.use(express.static(publicPath));  //tell express to use that folder
 //here's where we specify what to send to users that connect to our web server...
 //if there's no url extension, it will show "index.html"
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "/"));
+    res.sendFile(publicPath + "/index.html");
 });
-
+app.get("/draw", function (req, res) {
+    res.sendFile(publicPath + "/draw.html");
+});
+app.get("/files", function (req, res) {
+    //res.sendFile(path.join(__dirname, "/files.html"));
+		res.sendFile(publicPath + "/files.html");
+});
 //depending on what url extension the user navigates to, send them the respective html file. 
 /* // this example app has no additional pages besides the index, so I've commented these out for now.
 app.get('/a', function (req, res) {
